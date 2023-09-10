@@ -25,7 +25,7 @@ export default function App() {
 
   useEffect(() => {
     async function getRandomQuote() {
-      const result = await fetch('https://api.quotable.io/random');
+      const result = await fetch('https://api.quotable.io/random?maxLength=100');
       const jsonResult = await result.json();
       setGetQuote(jsonResult.content);
     }
@@ -69,6 +69,10 @@ export default function App() {
       showLegend: false,
       showButton: false
     }))
+    setData(prevData => ({
+      ...prevData,
+      mathType: ''
+    }))
   }
 
   function submitData(e) {
@@ -81,6 +85,7 @@ export default function App() {
         showButton: true
       }
     })
+    setIsLoaded(false)
     setData(prevData => {
       return { ...prevData }
     })
