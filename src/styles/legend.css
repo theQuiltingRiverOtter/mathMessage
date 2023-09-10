@@ -1,0 +1,48 @@
+ul {
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+.legendContainer {
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.problem {
+    clear: both;
+    float: left;
+    text-align: center;
+}
+
+.label {
+    float: center;
+}
+
+.inputCell {
+    display: block;
+    width: 2ch;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: blue;
+}
+
+.inputCell:focus {
+    border-color: green;
+}
