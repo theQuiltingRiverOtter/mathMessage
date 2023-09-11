@@ -2,7 +2,7 @@
   "name": "mathmessage",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://{theQuiltingRiverOtter}.github.io/{mathMessage}",
+  "homepage": "https://theQuiltingRiverOtter.github.io/mathMessage",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
